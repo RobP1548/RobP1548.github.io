@@ -245,7 +245,7 @@ h1, h2, h3, h4 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 120px;
 }
 
 .hero-content {
@@ -643,8 +643,18 @@ h1, h2, h3, h4 {
 /* Video Grid */
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 24px;
+    align-items: start;
+}
+
+.video-grid .video-thumbnail-link {
+    width: 100%;
+    min-width: 0;
+}
+
+.video-grid .iframe-wrapper {
+    width: 100%;
 }
 
 @media (max-width: 768px) {
